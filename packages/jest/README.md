@@ -1,5 +1,7 @@
 # @nmock/jest
 
+![NPM Version](https://img.shields.io/npm/v/%40nmock%2Fjest?logo=npm)
+
 Jest compatible module mocking for node:test runner.
 
 ## Installation

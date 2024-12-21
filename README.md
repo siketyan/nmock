@@ -1,5 +1,8 @@
 # nmock: Easy module mocking for Node.js Test Runner
 
+[![CI](https://github.com/siketyan/nmock/actions/workflows/ci.yaml/badge.svg)](https://github.com/siketyan/nmock/actions/workflows/ci.yaml)
+[![Publish](https://github.com/siketyan/nmock/actions/workflows/publish.yaml/badge.svg)](https://github.com/siketyan/nmock/actions/workflows/publish.yaml)
+
 This project adds easy module mocking to your `node:test` runner including:
 
 - Hoisted module mocks (you don't need to use dynamic imports)
