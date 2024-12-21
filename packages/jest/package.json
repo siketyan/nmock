@@ -1,6 +1,6 @@
 {
   "name": "@nmock/jest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Jest compatible module mocking for node:test runner.",
   "author": "Naoki Ikeguchi <me@s6n.jp>",
   "license": "MIT",
