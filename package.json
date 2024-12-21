@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "@nmock/workspace",
+  "packageManager": "pnpm@9.15.1",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  },
+  "scripts": {
+    "check": "biome check",
+    "fix": "biome check --write"
+  }
+}

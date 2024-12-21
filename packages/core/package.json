@@ -1,0 +1,41 @@
+{
+  "name": "@nmock/core",
+  "version": "0.1.0",
+  "description": "Core components for nmock packages",
+  "author": "Naoki Ikeguchi <me@s6n.jp>",
+  "license": "MIT",
+  "homepage": "https://github.com/siketyan/nmock",
+  "bugs": "https://github.com/siketyan/nmock/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siketyan/nmock.git",
+    "directory": "packages/core"
+  },
+  "files": ["lib"],
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    }
+  },
+  "engines": {
+    "node": "^20 || ^22"
+  },
+  "packageManager": "pnpm@9.15.1",
+  "dependencies": {
+    "acorn": "^8.14.0",
+    "acorn-walk": "^8.3.4",
+    "es-module-lexer": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "node --test --experimental-strip-types ./tests/**/*.test.ts"
+  }
+}

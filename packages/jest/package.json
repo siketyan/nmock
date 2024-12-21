@@ -1,0 +1,44 @@
+{
+  "name": "@nmock/jest",
+  "version": "0.1.0",
+  "description": "Jest compatible module mocking for node:test runner.",
+  "author": "Naoki Ikeguchi <me@s6n.jp>",
+  "license": "MIT",
+  "homepage": "https://github.com/siketyan/nmock",
+  "bugs": "https://github.com/siketyan/nmock/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siketyan/nmock.git",
+    "directory": "packages/jest"
+  },
+  "files": ["lib"],
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./register": {
+      "types": "./lib/register.d.ts",
+      "default": "./lib/register.js"
+    }
+  },
+  "engines": {
+    "node": "^20 || ^22"
+  },
+  "packageManager": "pnpm@9.15.1",
+  "dependencies": {
+    "@nmock/core": "workspace:*",
+    "jest-mock": "^29.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "NODE_NO_WARNINGS=1 node --test --experimental-strip-types --import @nmock/jest/register './tests/**/*.test.ts'"
+  }
+}
