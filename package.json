@@ -1,6 +1,9 @@
 {
   "private": true,
   "name": "@nmock/workspace",
+  "engines": {
+    "node": "^20 || ^22"
+  },
   "packageManager": "pnpm@9.15.1",
   "devDependencies": {
     "@biomejs/biome": "^1.9.4"
